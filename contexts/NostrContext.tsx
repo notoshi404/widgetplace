@@ -10,7 +10,7 @@ interface Nostr {
 }
 
 const ndk = new NDK({
-  cacheAdapter: new NDKCacheAdapterDexie({ dbName: 'widgetplace-ndk-db' }),
+  //cacheAdapter: new NDKCacheAdapterDexie({ dbName: 'widgetplace-ndk-db' }),
   explicitRelayUrls: (process.env.NEXT_PUBLIC_RELAY_URLS || '')
     .split(',')
     .filter((item) => !!item),
